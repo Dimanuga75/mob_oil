@@ -1,0 +1,226 @@
+.info {
+  position: relative;
+  min-width: 100%;
+  &__box-main {
+    @media (min-width: 767.98px) {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 30px;
+      margin-bottom: 80px;
+      &.pay {
+        justify-content: end;
+      }
+    }
+  }
+  &__box-title {
+    position: relative;
+    @media (min-width: 767.98px) {
+      order: 2;
+      &.pay {
+        order: unset;
+      }
+    }
+  }
+  &__title {
+    font-family: "Amatic SC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-top: 40px;
+    @media (min-width: 767.98px) {
+      order: 2;
+      margin: 0;
+    }
+    @media (min-width: 1200px) {
+      font-size: 48px;
+      margin-bottom: 72px;
+    }
+    &.pay {
+      order: unset;
+      margin-top: unset;
+    }
+    &.contact {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__inner {
+    background: #edf4d2;
+    box-shadow: 10px 10px 35px rgba(190, 191, 183, 0.1);
+    min-width: 100%;
+    padding: 22px 20px 0px 20px;
+    height: 102px;
+    margin-bottom: 40px;
+    @media (min-width: 767.98px) {
+      min-width: unset;
+      width: 489px;
+      margin: 0;
+    }
+    @media (min-width: 1200px) {
+      width: 759px;
+    }
+    &.pay {
+      height: 116px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 1200px) {
+      justify-content: end;
+      column-gap: 64px;
+      &.pay {
+        justify-content: start;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+  }
+
+  &__img-box {
+  }
+
+  &__img {
+  }
+  &__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    width: 100px;
+    @media (min-width: 1200px) {
+      width: unset;
+    }
+  }
+  &__picture-box {
+    position: absolute;
+    top: -70px;
+    right: 5px;
+    width: 78px;
+    height: 99px;
+    overflow: hidden;
+    @media (min-width: 767.98px) {
+      width: 104px;
+      height: 147px;
+      top: 5px;
+      right: -100px;
+    }
+    @media (min-width: 1200px) {
+      right: -290px;
+      top: 55px;
+    }
+
+    &.pay {
+      left: -3px;
+      top: -26px;
+      width: 116px;
+      @media (min-width: 767.98px) {
+        width: 191px;
+        height: 144px;
+        left: -160px;
+        top: -145px;
+      }
+      @media (min-width: 1200px) {
+        left: -330px;
+        top: -160px;
+      }
+    }
+  }
+
+  &__picture {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    &.pay {
+      min-width: unset;
+      min-height: unset;
+      object-fit: contain;
+      @media (min-width: 767.98px) {
+        min-width: 100%;
+      }
+    }
+  }
+}
+.contact {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 250px;
+    @media (min-width: 767.98px) {
+      height: 211px;
+    }
+  }
+  &__box {
+    position: absolute;
+    top: -104px;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 10px 10px 35px rgba(190, 191, 183, 0.1);
+    @media (min-width: 767.98px) {
+      width: 393px;
+      z-index: 90;
+      top: -200px;
+    }
+  }
+  &__box-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding-top: 11px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    @media (min-width: 767.98px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__item-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 24px;
+  }
+  &__img {
+    width: 24px;
+    height: 24px;
+    &.vk {
+      opacity: 0.6;
+    }
+  }
+
+  &__text a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 125%;
+    color: #4a4a4a;
+    @media (min-width: 767.98px) {
+      font-size: 16px;
+    }
+  }
+}
+.button.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  @media (min-width: 767.98px) {
+    margin-bottom: 40px;
+  }
+}
+.btn.contact {
+  width: 222px;
+  height: 40px;
+}
