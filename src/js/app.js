@@ -348,10 +348,6 @@ if (!screen1200.matches) {
       moreInnerDesk.classList.toggle("active");
     }
   });
-  //  userListBasket.insertAdjacentHTML(
-  //    "afterend",
-  //    "<div class='more-product__box'> </div>"
-  //  );
 }
 if (screen1200.matches) {
   moreBox.addEventListener("click", function (e) {

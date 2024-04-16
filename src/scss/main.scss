@@ -99,9 +99,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //  min-width: 280px;
+  overflow: hidden;
+
   @media (min-width: 767.98px) {
-    // min-width: 393px;
     position: relative;
   }
   @media (min-width: 1200px) {
@@ -157,8 +157,6 @@
 .left {
   width: 64px;
   height: 64px;
-}
-.right {
 }
 
 .inner__product {
